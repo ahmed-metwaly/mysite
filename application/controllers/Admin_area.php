@@ -18,7 +18,7 @@ class Admin_area extends CI_Controller {
     }
 
     public function index() {
-        echo 'ok';
+        $this->load->view('admin/index');
     }
 
 }
