@@ -23,34 +23,16 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <img alt="" src="assets/img/avatar1_small.jpg"/>
                             <span class="username">
-                                Bob Nilson
+                                احمد
                             </span>
                             <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="extra_profile.html">
-                                    <i class="fa fa-user"></i> My Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="page_calendar.html">
-                                    <i class="fa fa-calendar"></i> My Calendar
-                                </a>
-                            </li>
-                            <li>
                                 <a href="inbox.html">
-                                    <i class="fa fa-envelope"></i> My Inbox
+                                    <i class="fa fa-envelope"></i> الرسائل الواردة
                                     <span class="badge badge-danger">
                                         3
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-tasks"></i> My Tasks
-                                    <span class="badge badge-success">
-                                        7
                                     </span>
                                 </a>
                             </li>
@@ -58,17 +40,17 @@
                             </li>
                             <li>
                                 <a href="javascript:;" id="trigger_fullscreen">
-                                    <i class="fa fa-arrows"></i> Full Screen
+                                    <i class="fa fa-arrows"></i> ملئ الشاشة
                                 </a>
                             </li>
                             <li>
                                 <a href="extra_lock.html">
-                                    <i class="fa fa-lock"></i> Lock Screen
+                                    <i class="fa fa-lock"></i> تأمين الشاشة
                                 </a>
                             </li>
                             <li>
                                 <a href="login.html">
-                                    <i class="fa fa-key"></i> Log Out
+                                    <i class="fa fa-key"></i> تسجيل خروج
                                 </a>
                             </li>
                         </ul>
@@ -188,21 +170,24 @@
                         <div class="col-md-12">
                             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
                             <h3 class="page-title">
-                                Dashboard <small>statistics and more</small>
+                                لوحة التحكم <small>الإحصائيات وأكثر من ذلك</small>
                             </h3>
                             <ul class="page-breadcrumb breadcrumb">
-                                <li>
-                                    <i class="fa fa-home"></i>
-                                    <a href="index.html">
-                                        Home
+                               <li>
+                                   <i class="fa fa-home"></i>
+                                    <a href="<?php echo base_url() . 'admin_area/'; ?>">
+                                        لوحة التحكم
                                     </a>
-                                    <i class="fa fa-angle-right"></i>
+                                   <i class="fa fa-angle-left"></i>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Dashboard
+                                        
+                                    <a href="<?php echo base_url() . 'admin_area/index/'; ?>">
+                                        الرئيسية
                                     </a>
+                                    
                                 </li>
+                                
                                 <li class="pull-right">
                                     <div id="dashboard-report-range" class="dashboard-date-range tooltips" data-placement="top" data-original-title="Change dashboard date range">
                                         <i class="fa fa-calendar"></i>
@@ -225,7 +210,7 @@
                                 </div>
                                 <div class="details">
                                     <div class="number">
-                                        1349
+                                        <?php echo $feeds; ?>
                                     </div>
                                     <div class="desc">
                                         New Feedbacks
