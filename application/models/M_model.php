@@ -72,13 +72,11 @@ class M_model extends CI_Model {
      *  Delete
      * 
      * @param string $table
-     * @param string $colName
-     * @param string $colVal
+     * @param array $where
      * @return bool
      */
-    public function remove($table, $colName, $colVal) {
-        $this->db->where($colName, $colVal);
-        return $this->db->delete($table) ? TRUE : FALSE;
+    public function remove($table, $where = array()) {
+        return $this->db->delete($table, $where) ? TRUE : FALSE;
     }
     
     /**
