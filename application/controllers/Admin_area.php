@@ -21,7 +21,10 @@ class Admin_area extends CI_Controller {
         $this->load->model('M_model');
     }
 
-  
+  public function editGitFile()
+  {
+      return false;
+  }
     
     public function index() {
         
